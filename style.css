@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+    background: #000;
+    /* fallback color */
+}
+
+/* header section */
+.header {
+    position: relative;
+    height: 700px;
+    background: url("i3.jpg") no-repeat center/cover;
+
+    z-index: 0;
+}
+
+/* gradient overlay */
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(4, 0, 236, 0.6), rgba(2, 126, 242, 0.7));
+    z-index: 1;
+}
+
+/* text section */
+.text-box {
+    position: relative;
+    z-index: 2;
+    padding: 100px;
+    color: white;
+}
+
+.text-box h1 {
+    color: #FF5B00;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.text-box .p2 {
+    margin-top: 40px;
+}
+
+/* profile image */
+.profile {
+    position: absolute;
+    left: 600px;
+    bottom: 0;
+    right: 50px;
+    height: 650px;
+    width: auto;
+    z-index: 2;
+}
+
+/* shape image (behind profile) */
+.shape {
+    position: absolute;
+    top: 145px;
+    bottom: 0;
+    right: 0;
+    left: 680px;
+    height: auto;
+    width: 750px;
+    z-index: 2;
+    /* profile ke niche */
+    transform: scaley(-1);
+    transform: rotate(180deg);
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -320px;
+    left: 800px;
+    z-index: 2;
+
+}
+
+.circle2 {
+    width: 40px;
+    height: 40px;
+    border: 4px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -530px;
+    left: 1100px;
+    z-index: 2;
+}
+
+.button1 {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: -340px;
+    left: 97px;
+    z-index: 2;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #FF5B00;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+button::before {
+    content: '';
+    width: 30%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    transition: .5s;
+}
+
+.button1:hover::before {
+
+    width: 100%;
+}
+
+.button1:hover {
+    color: white;
+    background-color: #FF5B00;
+}
+
+
+
+.logo {
+    width: 200px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    top: -770px;
+    left: -200px;
+}
+
+.footter,
+.cv {
+    height: 500px;
+    width: auto;
+    margin-left: 14px;
+    margin-top: -95px;
+}
+
+.footter h1,
+.heading2 {
+    color: #FF5B00;
+    margin-left: 400px;
+    margin-top: -510px;
+    font-size: 60px;
+}
+
+.footter ul {
+    color: white;
+    margin-left: 420px;
+    margin-top: 5px;
+    line-height: 30px;
+}
+
+.heading3 {
+    color: #FF5B00;
+    font-size: 60px;
+    position: relative;
+    left: 420px;
+    top: -400px;
+}
+
+.content {
+    color: white;
+    margin-left: 420px;
+    margin-top: -385px;
+    line-height: 30px;
+
+
+}
+
+.button2 {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    left: 1000px;
+    bottom: 50px;
+    z-index: 2;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #0004ff;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition:.5s;
+    
+}
+
+.button2::before{
+    content: '';
+    width: 30%;
+    height: 100%;
+    background: rgb(255, 94, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    z-index: -1;
+    
+}
+
+.button2:hover::before {
+    width: 100%;
+}
+
+.button2:hover {
+    color: rgb(0, 0, 0);
+    background-color: #FF5B00;
+}
